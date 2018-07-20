@@ -355,18 +355,21 @@ function myfuntion(){
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
 <!-- {/literal} END JIVOSITE CODE -->
 	
+<fb:login-button 
 FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
     console.log(response.authResponse.accessToken);
   }
 });
 
-<fb:login-button 
   scope="public_profile,email"
   onlogin="checkLoginState();">
 </fb:login-button>
 
 
+
+
+<script>
 {
     status: 'connected',
     authResponse: {
@@ -377,7 +380,6 @@ FB.getLoginStatus(function(response) {
     }
 }
 
-<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '{266401824120198}',
