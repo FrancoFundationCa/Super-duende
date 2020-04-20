@@ -204,16 +204,8 @@ function googleTranslateElementInit() {
       <p><a class="waves-effect waves-light btn-large" href="http://www.elcapitandelasuerte.com.ve/">Winners.</a></p>
 <p class="align-text-top"><a class="waves-effect waves-light btn-large" href="https://euro1.ticketduende.com.ve">Buy!</a></p>
 	 
-   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="2WWRUBLFXDPMG">
-<table>
-<tr><td><input type="hidden" name="on0" value="El ticket of your luck.">El ticket of your luck.</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
-</table>
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
-
+   <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>
 
 
     </div>
